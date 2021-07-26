@@ -1,0 +1,40 @@
+$primary:hsl(327, 89%, 56%);
+$secondary:#F2EFEB;
+$mint:teal;
+$optional:black;
+$margin:10px;
+$padding:20px;
+
+@mixin  borderradius ($radius:20px){
+border-radius: $radius;
+}
+
+@mixin paragraph {
+  section{
+    background:$secondary;
+    @include borderradius;
+    margin: $margin;
+    padding: $padding;
+    font-size: 2em;
+  }
+  p{
+
+    background: $optional;
+    color: $primary;
+    @include borderradius(15px);
+    padding:$padding;
+
+  
+   
+
+  }
+  
+}
+
+section{
+  @include paragraph;
+}
+
+p{
+  @include paragraph;
+}
