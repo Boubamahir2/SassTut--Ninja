@@ -1,0 +1,30 @@
+@use "sass:color";
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$shadow:rgba(0, 0, 0, 0.25);
+body{
+
+  color:lighten(#333, 100%) 
+  ;text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color:lightgray;
+ 
+}
+.btn{
+  top: 200px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 400px;
+  padding: 40px 50px;
+  background-image:linear-gradient(0deg, darken($color-primary, 2.4%), color.scale($color-secondary, $lightness: 10%));
+  border: 1px solid color.scale($color-tertiary, $lightness: 20%);
+  box-shadow: $shadow;
+ 
+
+}
+
+
